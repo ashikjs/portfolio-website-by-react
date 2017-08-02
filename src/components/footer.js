@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
                             <ul class="social">
                                 <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>li>
+                                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                         <div class="col-md-4 col-md-pull-4 col-sm-6 col-sm-pull-4"><p>React Developer <span>© 2017.All right reserved</span>

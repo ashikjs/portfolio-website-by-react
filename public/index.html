@@ -33,17 +33,16 @@
 
 <script>
 
-    //    $('a[href^="#"]').click(function(){
-    //
-    //        var the_id = $(this).attr("href");
-    //
-    //        $('html, body').animate({
-    //            scrollTop:$(the_id).offset().top
-    //        }, 'slow');
-    //
-    //        return false;});
-
+//        $('a[href^="#"]').click(function(){
 //
+//            var the_id = $(this).attr("href");
+//
+//            $('html, body').animate({
+//                scrollTop:$(the_id).offset().top
+//            }, 'slow');
+//
+//            return false;});
+
 //    eval(function (p, a, c, k, e, d) {
 //        while (c--) {
 //            if (k[c]) {
@@ -52,6 +51,16 @@
 //        }
 //        return p
 //    }('$(\'a[1^="#"]\').5(6(){4 0=$(2).3("1");$(\'7, 8\').e({f:$(0).d().c},\'9\');b g});', 17, 17, 'the_id|href|this|attr|var|click|function|html|body|slow||return|top|offset|animate|scrollTop|false'.split('|')))
+
+
+var el = document.getElementById('story_body');
+var minPixel = el.offsetTop;
+var maxPixel = minPixel + el.scrollHeight;
+var value = document.body.scrollTop;
+
+// respect bounds of element
+var percent = (value - minPixel)/(maxPixel - minPixel);
+percent = Math.min(1,Math.max(percent, 0))*100;
 </script>
 </body>
 </html>

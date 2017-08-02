@@ -7,14 +7,15 @@ import Routes from "./route"
 import Nav from "./components/nav"
 import Footer from "./components/footer"
 import './index.css';
-// import registerServiceWorker from './registerServiceWorker';
+import createBrowserHistory from 'history/createBrowserHistory'
 
+const history = createBrowserHistory();
 const app = document.getElementById('root');
 ReactDOM.render(
 
-    <Router>
+    <Router >
         <div>
-            <Nav />
+            <Nav history={history} />
             <Routes />
             <Footer />
         </div>

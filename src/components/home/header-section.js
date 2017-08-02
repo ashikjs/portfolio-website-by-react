@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
                     <div class="header-body text-center">
                         <h1>Hi, I'm <span class="color-pp">Ashik</span></h1>
                         <p>UX/UI Designer and Developer</p>
-                        <span class="contact-btn">Contact me</span>
+                        <span class="contact-btn" id="footer8">Contact me</span>
                     </div>
                     <span class="scrollme">
                         <a href="#scroll2">

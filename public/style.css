@@ -129,9 +129,14 @@ ul {
 }
 .top-menu .navbar ul.nav li.social.start {
     padding-left: 30px;}
-.top-menu .navbar ul.nav li a:hover {
+.top-menu .navbar ul.nav li a:hover{
     color: #FF0F66;
-    border-bottom: 2px solid #FF0F66;
+    border-color: #FF0F66;
+    transition: all 0.65s ease-in;
+}
+.top-menu .navbar ul.nav li a.active {
+    color: #FF0F66;
+    /*border-color: #FF0F66;*/
     transition: all 0.65s ease-in;
 }
 .top-menu .navbar ul.nav li.social a:hover {

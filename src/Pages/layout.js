@@ -10,10 +10,6 @@ export default class Layout extends React.Component {
 
     }
     render(){
-       // {this.props.location.state}
-
-// const { history }= this.props;
-// console.log(history.isActive("about"));
         return (
             <div>
                 <h4>This is Body Details this is Home </h4>

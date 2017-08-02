@@ -63,7 +63,11 @@ ul {
     text-align: center;
     position: absolute;
     bottom: 30px;
-    width: 100%;
+    width: 30px;
+    height: 35px;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 .scrollme i {
     cursor: pointer;
@@ -97,20 +101,21 @@ ul {
     background-repeat: no-repeat;
     /*filter: brightness(0.7);*/
 }
-.header-section .navbar.navbar-default{
+.top-menu .navbar.navbar-default{
     background: transparent;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+    margin: 0;
 }
-.header-section .navbar .navbar-brand{
+.top-menu .navbar .navbar-brand{
     font-size: 24px;
     color: #000;
     font-weight: 700;
     padding-top: 20px;
 }
-.header-section .navbar ul.nav{}
-.header-section .navbar ul.nav li {}
-.header-section .navbar ul.nav li a{
+.top-menu .navbar ul.nav{}
+.top-menu .navbar ul.nav li {}
+.top-menu .navbar ul.nav li a{
     font-size: 16px;
     color: #fff;
     font-weight: 500;
@@ -119,21 +124,24 @@ ul {
     border-bottom: 2px solid transparent;
     transition: all 0.15s ease-out;
 }
-.header-section .navbar ul.nav li.social a {
+.top-menu .navbar ul.nav li.social a {
     padding: 20px 5px 20px 10px;
 }
-.header-section .navbar ul.nav li.social.start {
+.top-menu .navbar ul.nav li.social.start {
     padding-left: 30px;}
-.header-section .navbar ul.nav li a:hover {
+.top-menu .navbar ul.nav li a:hover {
     color: #FF0F66;
     border-bottom: 2px solid #FF0F66;
     transition: all 0.65s ease-in;
 }
-.header-section .navbar ul.nav li.social a:hover {
+.top-menu .navbar ul.nav li.social a:hover {
 
     border-bottom: 2px solid transparent;
 }
-.header-section {}
+.header-section {
+    margin-top: -67px;
+    padding-top: 67px;
+}
 .header-body {
     padding-top: calc(50vh - 200px);
     color: #fff;

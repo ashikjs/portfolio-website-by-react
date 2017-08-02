@@ -1,21 +1,25 @@
 import React from 'react';
-import Header from "../components/header"
-import Footer from "../components/footer"
+import HeaderSection from "../components/home/header-section"
+import AboutSection from "../components/home/about-section"
 
-import { Route, Link } from 'react-router-dom'
 export default class About extends React.Component {
 
     navigate(){
-        console.log(this.props);
-        // this.props.history.replace('/', null);
+        // console.log(this.props.history);
+        this.props.history.replace('/', null);
     }
     render(){
+
         return (
             <div>
-                {/*<Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />*/}
-                <h4>This is About Details............. About  </h4>
-                <Footer />
+                <HeaderSection />
+                <AboutSection />
 
+                <div class="container">
+                    <div class="col-md-12">
+                        <h1>About pages :p lol</h1>
+                        <h1>{this.props.location.pathname}</h1>
+                    </div></div>
             </div>
         );
     }

@@ -52,15 +52,6 @@
 //        return p
 //    }('$(\'a[1^="#"]\').5(6(){4 0=$(2).3("1");$(\'7, 8\').e({f:$(0).d().c},\'9\');b g});', 17, 17, 'the_id|href|this|attr|var|click|function|html|body|slow||return|top|offset|animate|scrollTop|false'.split('|')))
 
-
-var el = document.getElementById('story_body');
-var minPixel = el.offsetTop;
-var maxPixel = minPixel + el.scrollHeight;
-var value = document.body.scrollTop;
-
-// respect bounds of element
-var percent = (value - minPixel)/(maxPixel - minPixel);
-percent = Math.min(1,Math.max(percent, 0))*100;
 </script>
 </body>
 </html>

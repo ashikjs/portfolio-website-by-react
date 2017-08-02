@@ -14,7 +14,7 @@ export default class Layout extends React.Component {
             <div>
                 <h4>This is Body Details this is Home </h4>
                 <h2> {this.props.location.pathname}</h2>
-
+                <button onClick={this.navigate.bind(this)}>button binf</button>
                 <Footer />
 
             </div>

@@ -10,7 +10,6 @@ export default class Portfolio extends React.Component {
     }
     constructor(){
         super();
-        this.state = {title: "Welcome"};
     }
     changeTitle(title){
         this.setState({title});
@@ -23,7 +22,7 @@ export default class Portfolio extends React.Component {
                 <h4>This is About Details.............Portfolio </h4>
                 <Link to="/about">Check rout link protfolio</Link>
                 <Link to="/protfolio">Check rout link protfolio</Link>
-                <button onClick={this.navigate.bind(this)}>button binf</button>
+
                 <Footer />
 
             </div>

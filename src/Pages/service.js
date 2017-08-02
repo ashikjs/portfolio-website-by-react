@@ -19,7 +19,6 @@ export default class Service extends React.Component {
                     <div class="col-md-12">
                         <h1>Service pages :p lol</h1>
                         <h1>{this.props.location.pathname}</h1>
-                        <a href="#" onClick={this.navigate.bind(this)}>clicl me</a>
                     </div></div>
             </div>
         );

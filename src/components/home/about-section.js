@@ -47,7 +47,7 @@ export default class Footer extends React.Component {
                                 <div class="col-md-4">
                                     <div class="row">
                                         <h3>My Professional <span class="color-pp">Skills</span></h3>
-                                        <p id="story_body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem ok
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem ok
                                             Ipsum has been the industry's ...</p>
                                         <ul class="skills">
                                             <li class="web" title="Web Design"><h4>Web Design<span>90</span></h4></li>

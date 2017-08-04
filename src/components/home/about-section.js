@@ -7,14 +7,18 @@ export default class Footer extends React.Component {
                 <div class="about_us">
                     <div class="container">
                         <div class="col-md-12">
-                            <h2 id="scroll2">About <span class="color-pp">Ashik</span></h2>
-                            <ul class="line">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took ... </p>
+                            <div class="titileContain">
+                                <h2 id="scroll2">About <span class="color-pp">Ashik</span></h2>
+                                <ul class="titleLine">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been
+                                    the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                                    ... </p>
+                            </div>
                             <div class="about_details">
                                 <div class="col-md-4">
                                     <div class="row">

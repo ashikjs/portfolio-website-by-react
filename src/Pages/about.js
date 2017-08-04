@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderSection from "../components/home/header-section"
 import AboutSection from "../components/home/about-section"
+import Todos from "../components/about/todos"
 
 export default class About extends React.Component {
 
@@ -14,11 +15,12 @@ export default class About extends React.Component {
             <div>
                 <HeaderSection />
                 <AboutSection />
-
                 <div class="container">
                     <div class="col-md-12">
                         <h1>About pages :p lol</h1>
                         <h1>{this.props.location.pathname}</h1>
+
+                        <Todos />
                     </div></div>
             </div>
         );

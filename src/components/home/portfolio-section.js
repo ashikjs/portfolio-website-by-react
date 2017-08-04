@@ -5,7 +5,6 @@ export default class Portfolio extends React.Component {
     render() {
         return (
             <div>
-
                 <div class="portfolio_section">
                     <div class="container">
                         <div class="col-md-12">
@@ -102,7 +101,6 @@ export default class Portfolio extends React.Component {
                     </div>
                 </div>
             </div>
-
         );
     }
 }

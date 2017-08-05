@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
 import Todo from "../todo"
+import * as TodoAction from "../../action/todoAction"
 import TodoSotre from "../../store/todoesStore"
 
 export default class Todos extends React.Component {
@@ -19,6 +20,9 @@ export default class Todos extends React.Component {
             });
         })
     }
+    createTodo(){
+        TodoAction.createTodo(Date.now());
+    }
 
     render() {
         const {todos} = this.state;
@@ -27,6 +31,7 @@ export default class Todos extends React.Component {
         });
         return (
             <div>
+                <button onClick={this.createTodo.bind(this)}>Create!</button>
                 <h1>Todos</h1>
                 <ul>{TodoComponents}</ul>
             </div>

@@ -5,6 +5,9 @@ import ServiceSection from "../components/home/service-section"
 import PortfolioSection from "../components/home/portfolio-section"
 import ClientSection from "../components/home/client-section"
 import ContactSection from "../components/home/contact-section"
+import Todos from "../components/about/todos"
+
+
 export default class Home extends React.Component {
 
     render() {
@@ -14,7 +17,7 @@ export default class Home extends React.Component {
                 <AboutSection/>
                 <ServiceSection/>
                 <PortfolioSection/>
-                <ClientSection/>
+                <Todos />
                 <ContactSection/>
 
                 <div class="container">

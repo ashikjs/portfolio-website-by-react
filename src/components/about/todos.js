@@ -8,20 +8,34 @@ export default class Todos extends React.Component {
 
     constructor() {
         super();
+        this.getTodos = this.getTodos.bind(this);
         this.state = {
-            todos: TodoSotre.getAll()
+            todos: TodoSotre.getAll(),
+            // loading: true
         };
     }
 
     componentWillMount() {
-        TodoSotre.on("change", () => {
-            this.setState({
-                todos: TodoSotre.getAll(),
-            });
-        })
+        TodoSotre.on("change", this.getTodos);
+        console.log("count",TodoSotre.listenerCount("change"));
+
+
     }
-    createTodo(){
-        TodoAction.createTodo(Date.now());
+    componentWillUnmount() {
+        TodoSotre.removeListener("change", this.getTodos);
+    }
+
+    getTodos() {
+        this.setState({
+            todos: TodoSotre.getAll(),
+        });
+    }
+    // createTodos(){
+    //     TodoAction.createTodo(Date.now());
+    // }
+
+    reloadTodos(){
+        TodoAction.reloadTodo();
     }
 
     render() {
@@ -31,7 +45,8 @@ export default class Todos extends React.Component {
         });
         return (
             <div>
-                <button onClick={this.createTodo.bind(this)}>Create!</button>
+                {/*<button onClick={this.createTodos.bind(this)}>Create!</button>*/}
+                <button onClick={this.reloadTodos.bind(this)}>Reload!</button>
                 <h1>Todos</h1>
                 <ul>{TodoComponents}</ul>
             </div>

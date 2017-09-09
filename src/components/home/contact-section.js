@@ -5,8 +5,6 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div>
-
-
                 <div class="contact_section">
                     <div class="container">
                         <div class="col-md-12">
@@ -35,7 +33,7 @@ export default class Contact extends React.Component {
                                         </div>
                                         <div class="textBox">
                                             <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
-                                            <textarea rows="6" placeholder="Message!" required></textarea>
+                                            <textarea rows="6" placeholder="Message!"></textarea>
                                         </div>
                                         <a class="contactBtn" href="#" role="button">Send Message</a>
                                     </div>

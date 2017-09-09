@@ -4,22 +4,24 @@ import AboutSection from "../components/home/about-section"
 
 export default class Service extends React.Component {
 
-    navigate(){
+    navigate() {
         console.log(this.props.history);
         // this.props.history.replace('/', null);
     }
-    render(){
+
+    render() {
 
         return (
             <div>
-                <HeaderSection />
-                <AboutSection />
+                <HeaderSection/>
+                <AboutSection/>
 
                 <div class="container">
                     <div class="col-md-12">
-                        <h1>Service pages :p lol</h1>
+                        <h1>Service pages Rout is working</h1>
                         <h1>{this.props.location.pathname}</h1>
-                    </div></div>
+                    </div>
+                </div>
             </div>
         );
     }

@@ -5,23 +5,25 @@ import Todos from "../components/about/todos"
 
 export default class About extends React.Component {
 
-    navigate(){
+    navigate() {
         // console.log(this.props.history);
         // this.props.history.replace('/', null);
     }
-    render(){
+
+    render() {
 
         return (
             <div>
-                <HeaderSection />
-                <AboutSection />
+                <HeaderSection/>
+                <AboutSection/>
                 <div class="container">
                     <div class="col-md-12">
-                        <h1>About pages :p lol</h1>
+                        <h1>About pages Rout is working</h1>
                         <h1>{this.props.location.pathname}</h1>
 
-                        <Todos />
-                    </div></div>
+                        {/*<Todos />*/}
+                    </div>
+                </div>
             </div>
         );
     }

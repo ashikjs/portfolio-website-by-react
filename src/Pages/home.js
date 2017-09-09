@@ -17,12 +17,12 @@ export default class Home extends React.Component {
                 <AboutSection/>
                 <ServiceSection/>
                 <PortfolioSection/>
-                <Todos />
-                <ContactSection/>
 
+                <ContactSection/>
+                {/*<Todos />*/}
                 <div class="container">
                     <div class="col-md-12">
-                        <h1>Home pages :p lol</h1>
+                        <h1>Home pages Rout is working</h1>
                         <h1>{this.props.location.pathname}</h1>
                     </div>
                 </div>

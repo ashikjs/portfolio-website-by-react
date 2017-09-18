@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';var FontAwesome = require('react-fontawesome');
 export default class Footer extends React.Component {
 
     render() {
@@ -28,17 +28,16 @@ export default class Footer extends React.Component {
                                             unknown printer took a galley of type and scrambled it to make a type specimen
                                             book.</p>
                                         <ul class="adress">
-                                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Ka-244, Pragati Ave, Dhaka,
+                                            <li><FontAwesome name='map-marker' />   Ka-244, Pragati Ave, Dhaka,
                                                 Bangladesh
                                             </li>
-                                            <li><i class="fa fa-mobile" aria-hidden="true"></i>
+                                            <li><FontAwesome name='mobile' />
                                                 +880 2-8413772
                                             </li>
-                                            <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <li><FontAwesome name='envelope' />
                                                 jamuna@info.com
                                             </li>
-                                            <li><i class="fa fa-globe" aria-hidden="true"></i><a
-                                                href="www.jamunafuturepark.com">jamunafuturepark.com</a></li>
+                                            <li><FontAwesome name='globe' /><a href="www.jamunafuturepark.com">jamunafuturepark.com</a></li>
                                             <li class="resume"><a href="#">Download Resume </a></li>
                                         </ul>
                                     </div>

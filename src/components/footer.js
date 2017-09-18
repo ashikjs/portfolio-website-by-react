@@ -1,5 +1,5 @@
 import React from 'react';
-
+var FontAwesome = require('react-fontawesome');
 export default class Footer extends React.Component {
 
     render() {
@@ -9,9 +9,9 @@ export default class Footer extends React.Component {
                     <div class="container">
                         <div class="col-md-4 col-md-push-8 col-sm-4 col-sm-push-8">
                             <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><FontAwesome name='facebook-square' /></a></li>
+                                <li><a href="#"><FontAwesome name='twitter' /></a></li>
+                                <li><a href="#"><FontAwesome name='linkedin-square' /></a></li>
                             </ul>
                         </div>
                         <div class="col-md-4 col-md-pull-4 col-sm-6 col-sm-pull-4">

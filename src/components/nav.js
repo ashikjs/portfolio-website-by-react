@@ -42,7 +42,7 @@ export default class Nav extends React.Component {
                             <div class={"collapse navbar-collapse " + navClass} id="check123">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><NavLink exact={true} to="/" name="Service" activeClassName="active">Home</NavLink></li>
-                                    <li><NavLink to="/about" activeClassName="active">About Ashik</NavLink></li>
+                                    <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
                                     <li><NavLink to="/service" activeClassName="active">Service</NavLink></li>
                                     <li><a href="#">Portfolio</a></li>
                                     <li><a href="#" onClick={this.navigate.bind(this)}>Blogs</a></li>
